@@ -1,0 +1,96 @@
+.music-card {
+  width: 250px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.music-card > .image,
+.music-card > .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.music-card > .image {
+  width: 100%;
+  height: 230px;
+  position: relative;
+  overflow: hidden;
+}
+
+.music-card > .image > .shadow {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 888;
+  transform: scale(0);
+  transform-origin: center;
+  transition: all 0.3s ease-in;
+}
+.music-card > .image > .shadow > svg {
+  width: 40px;
+  height: 40px;
+  color: white;
+}
+.music-card > .image > .shadow > svg:hover {
+  animation: rotateSvg 0.5s linear normal;
+}
+.music-card > .image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  border: 1px solid transparent;
+}
+
+.music-card > .text {
+  width: 100%;
+  height: 60px;
+  color: theme('colors.white');
+}
+
+.music-card > .text h3,
+.music-card > .text span {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-weight: bold;
+}
+.music-card > .text h3 {
+  font-size: 16px;
+}
+.music-card > .text span {
+  font-size: 12px;
+  color: theme('colors.grey2');
+}
+
+@media screen and (min-width: 640px) {
+  .music-card > .image > img {
+    transition: all 0.3s ease-in;
+    border: 1px solid transparent;
+  }
+  .music-card > .image:hover > .shadow {
+    transform: scale(1);
+    transition: all 0.3s ease-in;
+  }
+}
+
+@keyframes rotateSvg {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

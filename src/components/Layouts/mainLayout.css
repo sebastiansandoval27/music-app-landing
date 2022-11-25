@@ -1,0 +1,21 @@
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  margin-top: theme('height.16');
+  padding: 20px 10px;
+  padding-bottom: 150px;
+  width: 100%;
+  background-color: theme('colors.grey3');
+}
+
+@media screen and (min-width: 768px) {
+  .layout-container {
+    flex-direction: row;
+    margin-top: 0;
+    width: calc(100vw - 300px);
+    margin-left: 300px;
+    padding: 20px 100px;
+    padding-bottom: 150px;
+  }
+}

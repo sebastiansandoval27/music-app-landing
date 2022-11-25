@@ -1,0 +1,88 @@
+.large-card {
+  width: 300px;
+  max-width: 330px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  height: 290px;
+  max-height: 320px;
+}
+
+.large-card .text {
+  width: 100%;
+  height: 75px;
+  padding: 5px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: 12px;
+  border-radius: 5px;
+}
+.large-card .text span {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 12px;
+  color: theme('colors.grey2');
+}
+.large-card .text span.title-card {
+  font-size: 16px;
+  color: theme('colors.white');
+}
+
+.large-card .image {
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.large-card .image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.large-card .image .image-text {
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 99;
+  color: white;
+  padding: 0 5px;
+}
+
+.large-card .image .image-text .name {
+  width: 85%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.large-card .image .image-text .play {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: theme('colors.grey1');
+}
+
+.large-card .image .image-text .play svg {
+  width: 20px;
+  height: 20px;
+  color: theme('colors.white');
+}
+
+@media screen and (min-width: 768px) {
+}

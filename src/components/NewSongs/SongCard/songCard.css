@@ -1,0 +1,67 @@
+.song-card {
+  width: 100%;
+  height: 60px;
+}
+.song-card > .divider {
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 90%;
+  height: 1px;
+  color: theme('colors.white');
+  opacity: 0.3;
+  filter: blur(0.5px);
+}
+.song-card > .content {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 12% 75% 8%;
+  grid-template-rows: 100%;
+}
+.song-card > .content .image {
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+  background-color: #000;
+  overflow: hidden;
+}
+.song-card > .content .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.song-card > .content .text {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0 7px;
+}
+
+.song-card > .content .text h3,
+.song-card > .content .text span {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.song-card > .content .points {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+}
+
+.song-card > .content .points svg {
+  fill: theme('colors.primary50');
+}
+
+@media screen and (min-width: 640px) {
+  .song-card > .divider {
+    display: none;
+  }
+}

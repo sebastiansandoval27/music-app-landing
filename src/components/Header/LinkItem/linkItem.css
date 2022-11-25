@@ -1,0 +1,7 @@
+.link-item > svg {
+  color: theme('colors.primary50');
+}
+
+.link-item.active {
+  background-color: theme('colors.link');
+}
