@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "textImageCard": "The Weeknd",
+    "categoryCard": "Musica pop latino",
+    "titleCard": "¡Dale play!",
+    "subtitleCard": "NUEVA MUSICA",
+    "imageCard": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bXVzaWN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    "id": 2,
+    "textImageCard": "The Weeknd",
+    "categoryCard": "Musica pop latino",
+    "titleCard": "¡Dale play!",
+    "subtitleCard": "NUEVA MUSICA",
+    "imageCard": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bXVzaWN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    "id": 3,
+    "textImageCard": "The Weeknd",
+    "categoryCard": "Musica pop latino",
+    "titleCard": "¡Dale play!",
+    "subtitleCard": "NUEVA MUSICA",
+    "imageCard": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bXVzaWN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    "id": 4,
+    "textImageCard": "The Weeknd",
+    "categoryCard": "Musica pop latino",
+    "titleCard": "¡Dale play!",
+    "subtitleCard": "NUEVA MUSICA",
+    "imageCard": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bXVzaWN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    "id": 5,
+    "textImageCard": "The Weeknd",
+    "categoryCard": "Musica pop latino",
+    "titleCard": "¡Dale play!",
+    "subtitleCard": "NUEVA MUSICA",
+    "imageCard": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bXVzaWN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+  }
+]

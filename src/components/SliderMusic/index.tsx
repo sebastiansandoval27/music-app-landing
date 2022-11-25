@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
+import data from '../../db/music.json'
 
 import MusicCard from './MusicCard'
 
@@ -11,49 +12,46 @@ const SliderMuisic = () => {
       onSlideChange={() => console.log('slide change')}
       onSwiper={swiper => console.log(swiper)}
       breakpoints={{
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 5,
+        },
+        375: {
+          slidesPerView: 1.15,
+          spaceBetween: 5,
+        },
+        414: {
+          slidesPerView: 1.45,
+          spaceBetween: 5,
+        },
         640: {
-          slidesPerView: 3.05,
+          slidesPerView: 2.3,
+          spaceBetween: 5,
         },
         768: {
-          slidesPerView: 4.5,
+          slidesPerView: 2.8,
+          spaceBetween: 5,
+        },
+        992: {
+          slidesPerView: 1.8,
+          spaceBetween: 5,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 5,
         },
       }}
     >
-      <SwiperSlide>
-        <MusicCard
-          title="El desesperado"
-          singer="Andrés Cepeda"
-          image="https://images.unsplash.com/photo-1526218626217-dc65a29bb444?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c2luZ2VyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-        />
-      </SwiperSlide>
-      <SwiperSlide>
-        <MusicCard
-          title="El desesperado"
-          singer="Andrés Cepeda"
-          image="https://images.unsplash.com/photo-1526218626217-dc65a29bb444?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c2luZ2VyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-        />
-      </SwiperSlide>
-      <SwiperSlide>
-        <MusicCard
-          title="El desesperado"
-          singer="Andrés Cepeda"
-          image="https://images.unsplash.com/photo-1526218626217-dc65a29bb444?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c2luZ2VyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-        />
-      </SwiperSlide>
-      <SwiperSlide>
-        <MusicCard
-          title="El desesperado"
-          singer="Andrés Cepeda"
-          image="https://images.unsplash.com/photo-1526218626217-dc65a29bb444?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c2luZ2VyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-        />
-      </SwiperSlide>
-      <SwiperSlide>
-        <MusicCard
-          title="El desesperado"
-          singer="Andrés Cepeda"
-          image="https://images.unsplash.com/photo-1526218626217-dc65a29bb444?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c2luZ2VyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-        />
-      </SwiperSlide>
+      {data &&
+        data.map(item => (
+          <SwiperSlide key={item.id}>
+            <MusicCard
+              title={item.title}
+              singer={item.singer}
+              image={item.image}
+            />
+          </SwiperSlide>
+        ))}
     </Swiper>
   )
 }
